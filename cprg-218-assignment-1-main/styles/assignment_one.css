@@ -1,9 +1,9 @@
 .card-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  list-style-type: none;  
   }
   
   .card img {
@@ -23,6 +23,9 @@
   @media (min-width: 768px) {
     .card-container {
       grid-template-columns: repeat(2, 1fr);
+    } 
+  .card:last-child {
+     /* the grid-column will need to be modified so this card spans two columns */
     }
   }
   @media (min-width: 1200px) {
